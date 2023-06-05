@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Sweets-Container{
+    /* background-color: #ff9d00; */
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.Sweets_Box{
+    margin: 30px 35px;
+    width: 220px;
+}
+
+.sweets-image{
+    border: 4px solid black;
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Sweets-Name{
+    background-color:  #ddcdd5;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.Sweets-Price{
+    background-color:  #f0f8ff;
+    height: 30px;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.Sweets-Cart{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(213, 134, 14);
+    border: 1px solid black;
+    margin-top: 1px;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+.sweets-image:hover>img{
+    transform: scale(1.3);
+}
+
+.sweets-image>img{
+    transition: transform 1.5s;
+}
+
+@media (max-width:1280px){
+    .Sweets_Box{
+        width: 200px;
+    }
+}
+
+@media (max-width:1200px){
+    .Sweets_Box{
+        width: 180px;
+    }
+
+    .sweets-image{
+        height: 165px;
+    }
+}
+
+@media (max-width:1120px){
+    .Sweets_Box{
+        width: 160px;
+    }
+
+    .sweets-image{
+        height: 150px;
+    }
+
+    .Sweets-Name{
+        font-size: 1.25rem;
+        height: 27px;
+        padding-top: 2px;
+    }
+
+    .Sweets-Cart{
+        font-size: 1.05rem;
+        height: 25px;
+        padding-top: 2px;
+    }
+
+    
+}
